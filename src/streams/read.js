@@ -1,7 +1,7 @@
-import { dirname, resolve } from 'path';
-import { fileURLToPath } from 'url';
-import { createReadStream } from 'fs';
-import { pipeline } from 'stream/promises';
+import { dirname, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { createReadStream } from 'node:fs';
+import { pipeline } from 'node:stream/promises';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);

@@ -1,5 +1,5 @@
 import { dirname, resolve } from 'node:path';
-import { fileURLToPath } from 'url';
+import { fileURLToPath } from 'node:url';
 import { fork } from 'node:child_process';
 
 const __filename = fileURLToPath(import.meta.url);

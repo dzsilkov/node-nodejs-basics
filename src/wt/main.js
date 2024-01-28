@@ -1,7 +1,7 @@
-import { dirname, resolve } from 'path';
-import { fileURLToPath } from 'url';
-import { cpus } from 'os';
-import { Worker } from 'worker_threads';
+import { dirname, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { cpus } from 'node:os';
+import { Worker } from 'node:worker_threads';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);

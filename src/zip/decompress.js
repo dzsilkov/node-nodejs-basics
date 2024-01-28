@@ -1,8 +1,8 @@
-import { createUnzip } from 'zlib';
-import { createReadStream, createWriteStream } from 'fs';
-import { dirname, resolve } from 'path';
-import { fileURLToPath } from 'url';
-import { pipeline } from 'stream/promises';
+import { createUnzip } from 'node:zlib';
+import { createReadStream, createWriteStream } from 'node:fs';
+import { dirname, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { pipeline } from 'node:stream/promises';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
